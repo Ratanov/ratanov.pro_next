@@ -1,18 +1,17 @@
 .cv_exp {
-    padding: 15px;
+    padding: 15px 30px;
 }
 .cv_exp__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 10px;
 }
 .cv_exp__body {
     margin: 8px;
 
 }
 .cv_job {
-    padding: 10px 0;
+    
 }
 .cv_job__info {
     display: flex;
