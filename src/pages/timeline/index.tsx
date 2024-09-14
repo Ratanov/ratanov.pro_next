@@ -1,10 +1,11 @@
 import TimelineItem from "../../features/timeline-item";
-import timelineItems from "../../assets/json/timelineItems.json";
+import timelineItems from "../../assets/json/timeline-items.json";
+import MainLayout from "@/app/main-layout";
 import "./timeline.css";
 
 const Timeline = () =>
   timelineItems.length > 0 && (
-    <>
+    <MainLayout>
       <h2 className="text-center">Мой путь!</h2>
       <p className="text-center">
         Здесь расположена хронология моих профессиональных и творческих
@@ -19,7 +20,7 @@ const Timeline = () =>
           <TimelineItem data={data} key={idx} />
         ))}
       </div>
-    </>
+    </MainLayout>
   );
 
 export default Timeline;

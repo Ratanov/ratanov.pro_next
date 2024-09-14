@@ -1,36 +1,52 @@
-import { FC, useState } from "react";
-import MainLayout from "@/app/main-layout";
+"use client";
+import { FC, useEffect, useState } from "react";
+import PhotoSwipeLightbox from "photoswipe/lightbox";
+import "photoswipe/style.css";
 import styles from "./gallery.module.css";
 
-interface GalleryItem {
-  largeURL: string;
-  thumbnailURL: string;
+export interface GalleryImage {
   width: number;
   height: number;
+  largeURL: string;
+  thumbnailURL: string;
 }
 
-export interface GalleryProps {
-  items: GalleryItem[];
+interface GalleryProps {
+  galleryId: string;
+  images: GalleryImage[];
 }
 
-const Gallery: FC<GalleryProps> = ({ items }) => {
+const Gallery: FC<GalleryProps> = ({ galleryId, images }) => {
+  useEffect(() => {
+    let lightbox: PhotoSwipeLightbox | null = new PhotoSwipeLightbox({
+      gallery: `#${galleryId}`,
+      children: "a",
+      pswpModule: () => import("photoswipe"),
+    });
+    lightbox.init();
+
+    return () => {
+      lightbox?.destroy();
+      lightbox = null;
+    };
+  }, [galleryId]);
 
   return (
-    <MainLayout>
-      <h2 className="text-center">Галерея</h2>
-      <div className={styles.gallery}>
-        {items.map((data, index) => {
-          return (
-            <img
-              key={index}
-              src={data.largeURL}
-              alt="description"
-              className={styles.gallery__item}
-            />
-          );
-        })}
-      </div>
-    </MainLayout>
+    <div className="gallery" id={galleryId}>
+      {images.map((img, i) => (
+        <a
+          key={`${galleryId}-${i}`}
+          href={img.largeURL}
+          data-pswp-width={img.width}
+          data-pswp-height={img.height}
+          className="gallery__item"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={img.thumbnailURL} alt="" />
+        </a>
+      ))}
+    </div>
   );
 };
 

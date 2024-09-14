@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { string, number, func, bool } from "prop-types";
+import RatingIcon from "./rating-icon";
 import styles from "./rating.module.css";
-import RatingIcon from "../rating-icon";
 
 const SIZES = {
   SMALL: {

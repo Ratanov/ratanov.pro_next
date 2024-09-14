@@ -1,10 +1,10 @@
+import SimpleGallery from "@/widgets/simple-gallery";
 import MainLayout from "./main-layout";
-import Timeline from "@/pages/timeline";
 
 export default function Home() {
   return (
     <MainLayout>
-      <Timeline />
+      <div>Старайся каждый день делать хотя бы по немногу</div>
     </MainLayout>
   );
 }

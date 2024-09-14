@@ -1,11 +1,13 @@
 import Gallery from "../../widgets/gallery";
-import galleryItems from "../../assets/json/galleryItems.json";
+import MainLayout from "@/app/main-layout";
+import { images } from "./img-data";
 
 const GalleryPage = () => {
   return (
-    <div>
-      <Gallery items={ galleryItems } />
-    </div>
+    <MainLayout>
+      <h2 className="text-center">Галерея</h2>
+      <Gallery galleryId="dis-gallery" images={images} />
+    </MainLayout>
   );
 };
 

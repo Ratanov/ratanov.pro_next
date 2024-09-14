@@ -20,9 +20,10 @@
 }
 
 .gallery__item:nth-child(odd) {
-  max-height: 400px;
+  min-height: 400px;
 }
 
 .gallery__item:nth-child(even) {
-  max-height: 400px;
+  min-height: 400px;
 }
+
