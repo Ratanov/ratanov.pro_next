@@ -12,13 +12,13 @@ export default function CV() {
         <div className={styles.cv__left}>
           <CVAbout />
           <hr />
+          <CVEdu />
+          <hr />
           <CVSkills />
         </div>
         <div style={{border: "1px solid #d4d4d4; height: '100%'"}}></div>
         <div className={styles.cv__right}>
           <CVExp />
-          <hr />
-          <CVEdu />
         </div>
       </div>
     </MainLayout>

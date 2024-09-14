@@ -1,6 +1,6 @@
 .cv {
     display: grid;
-    grid-template-columns: 40% 1px 60%;
+    grid-template-columns: 50% 1px 50%;
 }
 
 .cv__left {

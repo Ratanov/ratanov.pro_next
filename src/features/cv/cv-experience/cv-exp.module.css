@@ -1,5 +1,5 @@
 .cv_exp {
-    padding: 15px 30px;
+    padding: 15px;
 }
 .cv_exp__header {
     display: flex;
@@ -7,7 +7,6 @@
     justify-content: space-between;
 }
 .cv_exp__body {
-    margin: 8px;
 
 }
 .cv_job {
@@ -16,6 +15,7 @@
 .cv_job__info {
     display: flex;
     align-items: center;
+    padding: 15px;
 }
 .cv_job__logo img {
     width: 80px;
