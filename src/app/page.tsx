@@ -1,4 +1,3 @@
-import SimpleGallery from "@/widgets/simple-gallery";
 import MainLayout from "./main-layout";
 
 export default function Home() {

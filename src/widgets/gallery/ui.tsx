@@ -32,18 +32,18 @@ const Gallery: FC<GalleryProps> = ({ galleryId, images }) => {
   }, [galleryId]);
 
   return (
-    <div className="gallery" id={galleryId}>
+    <div className={styles.gallery} id={galleryId}>
       {images.map((img, i) => (
         <a
           key={`${galleryId}-${i}`}
           href={img.largeURL}
           data-pswp-width={img.width}
           data-pswp-height={img.height}
-          className="gallery__item"
+          className={styles.gallery__item}
           target="_blank"
           rel="noreferrer"
         >
-          <img src={img.thumbnailURL} alt="" />
+          <img src={img.largeURL} alt="description" className={styles.gallery__img} />
         </a>
       ))}
     </div>
