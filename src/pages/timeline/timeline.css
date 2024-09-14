@@ -1,0 +1,24 @@
+.timeline-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 40px auto;
+}
+.timeline-container::after {
+  background-color: #e17b77;
+  content: '';
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 2px;
+  height: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .timeline-container {
+    max-width: 500px;
+  }
+  .timeline-container::after {
+    left: 0;
+  }
+}

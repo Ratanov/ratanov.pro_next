@@ -1,0 +1,66 @@
+[
+    {
+        "text": "Написали статью в газете «Время Татнефти»",
+        "date": " 2022",
+        "category": {
+            "tag": "пресса",
+            "color": "#20c225"
+        },
+        "link": {
+            "url": "https://www.youtube.com/watch?v=YutRkrl6xa0",
+            "text": "Открыть статью"
+        },
+        "img": {
+            "url": "https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg",
+            "alt": "подпись"
+        } 
+    },
+    {
+        "text": "Интервью для телеканала «Время Татнефти»",
+        "date": "9 ноября 2022",
+        "category": {
+            "tag": "youtube",
+            "color": "#CD201F"
+        },
+        "link": {
+            "url": "https://www.youtube.com/watch?v=YutRkrl6xa0",
+            "text": "Посмтреть на YouTube"
+        },
+        "video": {
+            "url": "https://ratanov.pro/video/interview_1.mp4",
+            "type": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\""
+        } 
+    },
+    {
+        "text": "Участие в новогоднем выпуске «Время Татнефти»",
+        "date": "30 декабря 2022",
+        "category": {
+            "tag": "youtube",
+            "color": "#CD201F"
+        },
+        "link": {
+            "url": "https://youtu.be/_XwV6zLTGOg?si=zDJUD4FPkE5m134m&t=764",
+            "text": "Посмтреть на YouTube"
+        },
+        "video": {
+            "url": "https://ratanov.pro/video/interview_2.mp4",
+            "type": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\""
+        } 
+    },
+    {
+        "text": "Участие в новогоднем выпуске «Время Татнефти»",
+        "date": "30 декабря 2022",
+        "category": {
+            "tag": "youtube",
+            "color": "#CD201F"
+        },
+        "link": {
+            "url": "https://youtu.be/_XwV6zLTGOg?si=zDJUD4FPkE5m134m&t=764",
+            "text": "Посмтреть на YouTube"
+        },
+        "video": {
+            "url": "https://ratanov.pro/video/interview_2.mp4",
+            "type": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\""
+        } 
+    }
+]

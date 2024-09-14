@@ -1,0 +1,195 @@
+.color__youtube {
+  color: #cd201f;
+  background-color: #cd201f;
+}
+.timeline-item {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 20px;
+  position: relative;
+  margin: -44px 0;
+  width: 50%;
+  z-index: 1;
+}
+.timeline-item:first-child {
+  margin-top: 0;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-item:hover {
+  filter: drop-shadow(0 0 2em #c7c7c7aa);
+}
+.timeline-item:hover .timeline-item__content .circle {
+  background-color: #cd201f;
+}
+.timeline-item:nth-child(odd) {
+  align-self: flex-start;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-left: 0;
+}
+.timeline-item__content {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* padding: 15px; */
+  position: relative;
+  width: 100%;
+  text-align: right;
+}
+.timeline-item__content::after {
+  content: " ";
+  background-color: #fff;
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: -7.5px;
+  top: calc(50% - 7.5px);
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+}
+.timeline-item:nth-child(odd) .timeline-item__content {
+  text-align: left;
+  align-items: flex-start;
+}
+.timeline-item:nth-child(odd) .timeline-item__content::after {
+  left: auto;
+  right: -7.5px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px 0;
+}
+
+.timeline-item:nth-child(odd) .timeline-item__header {
+  flex-direction: row-reverse;
+}
+
+.timeline-item__content .tag {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 5px;
+  text-transform: uppercase;
+}
+.timeline-item:nth-child(odd) .timeline-item__content .tag {
+  left: auto;
+  right: 7px;
+}
+.timeline-item__content time {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+}
+.timeline-item__title {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  padding: 8px 10px;
+}
+
+.timeline-item:nth-child(odd) .timeline-item__title {
+  text-align: right;
+}
+/* .timeline-item__content a::after {
+  content: " ►";
+  font-size: 12px;
+} */
+.timeline-item__content .circle {
+  background-color: #fff;
+  border: 3px solid #e17b77;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+}
+.timeline-item:nth-child(odd) .circle {
+  right: -30px;
+  left: auto;
+}
+.timeline-item__img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.timeline-item__content video {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* @media only screen and (max-width: 1023px) {
+  .timeline-item__content {
+    max-width: 100%;
+  }
+} */
+@media only screen and (max-width: 767px) {
+  .timeline-item {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .timeline-item {
+    align-self: flex-start;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .timeline-item:nth-child(odd) .timeline-item__content::after {
+    left: -7.5px;
+    right: auto;
+    /* box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2); */
+}
+.timeline-item:nth-child(odd) .circle {
+  right: auto;
+  left: -30px;
+}
+.timeline-item__header {
+  padding: 10px 15px 5px;
+}
+.timeline-item__title {
+  padding: 5px 15px 10px;
+}
+.timeline-item:nth-child(odd) .timeline-item__header {
+  flex-direction: row;
+}
+.timeline-item:nth-child(odd) .timeline-item__title {
+  text-align: left;
+}
+  /* .timeline-item__content,
+  .timeline-item:nth-child(odd) .timeline-item__content {
+    padding: 15px 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .timeline-item__content .tag {
+    width: calc(100% - 10px);
+    text-align: center;
+  }
+  .timeline-item__content time {
+    margin-top: 20px;
+  }
+  .timeline-item__content a {
+    text-decoration: underline;
+  }
+  .timeline-item__content a::after {
+    display: none;
+  } */
+}

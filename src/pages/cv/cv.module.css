@@ -1,0 +1,16 @@
+.cv {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.cv__left {
+
+}
+
+.cv__right {
+
+}
+
+.cv__im {
+    
+}

@@ -1,0 +1,10 @@
+.root {
+  left: 0;
+  grid-auto-flow: row;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  gap: 3px;
+}
