@@ -1,6 +1,6 @@
 .cv {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 1px 60%;
 }
 
 .cv__left {
@@ -11,6 +11,6 @@
 
 }
 
-.cv__im {
+.cv__img {
     
 }

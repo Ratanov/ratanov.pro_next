@@ -1,0 +1,83 @@
+.container {
+  max-width: 1280px;
+  padding: 10px 30px;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.align_center {
+  align-items: center !important;
+}
+
+.justify_between {
+  justify-content: space-between !important;
+}
+.ml_1 {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+.ml_2 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+.ml_3 {
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+.ml_4 {
+  margin-left: 25px !important;
+  margin-right: 25px !important;
+}
+.ml_5 {
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+}
+.mx_2 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.mx_3 {
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+
+.p_1 {
+  padding: 5px !important;
+}
+
+.p_2 {
+  padding: 10px !important;
+}
+
+.px_1 {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.px_2 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.px_3 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.py_1 {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.py_2 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.text_center {
+  text-align: center !important;
+}

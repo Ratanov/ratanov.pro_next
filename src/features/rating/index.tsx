@@ -129,17 +129,16 @@ const Rating = (props: any) => {
 
   return (
     <>
-      <div className="flex align-center justify-between">
-        <p className="py-2">{skill}</p>
-        {showTotal ? <p className="py-2">{decimal}</p> : null}
-      </div>
-
-      <div className={styles.root}>
-        {[...new Array(numberOfStar)].map((arr, index) =>
-          interaction
-            ? withUserInteraction(index)
-            : withoutUserInteraction(index)
-        )}
+      <div className={styles.skill_rating}>
+        <span className={styles.skill_rating__title}>{skill}</span>
+        <div className={styles.skill_rating__stars}>
+          {[...new Array(numberOfStar)].map((arr, index) =>
+            interaction
+              ? withUserInteraction(index)
+              : withoutUserInteraction(index)
+          )}
+        </div>
+        {showTotal ? <span className={styles.skill_rating__value}>{decimal}</span> : null}
       </div>
     </>
   );

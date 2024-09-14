@@ -1,0 +1,39 @@
+.cv_exp {
+    padding: 15px;
+}
+.cv_exp__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.cv_exp__body {
+    margin: 8px;
+
+}
+.cv_job {
+    padding: 10px 0;
+}
+.cv_job__info {
+    display: flex;
+    align-items: center;
+}
+.cv_job__logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px black;
+
+}
+.cv_job__name {
+    font-weight: 700;
+}
+.cv_job__position {
+    padding: 10px 0;
+}
+.cv_job__title {
+    font-weight: 700;
+}
+.cv_exp__footer {
+    margin: 8px;
+}

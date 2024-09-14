@@ -1,4 +1,5 @@
 import Header from "@/widgets/header";
+import Footer from "@/widgets/footer";
 import "./globals.css";
 
 export default function MainLayout({
@@ -10,6 +11,7 @@ export default function MainLayout({
     <>
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
   );
 }

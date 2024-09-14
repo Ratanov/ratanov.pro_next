@@ -1,28 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./header.module.css";
+import css from "@/shared/css/css.module.css";
 
-// This could be a page component
 export default function Header() {
   return (
     <div className={styles.header}>
-      <div className="flex align-center">
+      <div className={`${css.flex} ${css.align_center}`}>
         <a href="./" target="_blank">
           <Image
             className={styles.logo}
             src="/img/crown.svg"
             width={28}
             height={28}
-            alt="Ratanov.pro logo"
+            alt="ratanov.pro logo"
           />
         </a>
-        <span className="px-2">ratanov.pro</span>
+        <span className={css.px_2}>ratanov.pro</span>
       </div>
-      <nav className="mx-2">
-        <Link className="px-3" href="/">Главная</Link>
-        <Link className="px-3" href="/cv">CV</Link>
-        <Link className="px-3" href="/gallery">Галерея</Link>
-        <Link className="px-3" href="/about">Обо мне</Link>
+      <nav className={css.mx_2}>
+        <Link className={css.px_3} href="/">Главная</Link>
+        <Link className={css.px_3} href="/cv">CV</Link>
+        <Link className={css.px_3} href="/gallery">Галерея</Link>
+        <Link className={css.px_3} href="/about">Обо мне</Link>
       </nav>
     </div>
   );
