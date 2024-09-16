@@ -5,7 +5,7 @@ import css from "@/shared/css/css.module.css";
 
 export default function Header() {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <a
         href="./"
         className={`${css.flex} ${css.align_center}`}
@@ -34,6 +34,6 @@ export default function Header() {
           Обо мне
         </Link>
       </nav>
-    </div>
+    </header>
   );
 }
